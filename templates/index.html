@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lamborghini</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/lamborghini.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+     <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h2 class="mb-0 text-primary text-uppercase"><i class="fa-doutone fa-light fa-skull-cow"></i> Lamborghini</h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="team.html" class="dropdown-item">Our Models</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a class="btn btn-outline-primary border-2" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="/static/img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Welcome</h5>
+                                <h1 class="display-1"> Lamborghini</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">Inspiring Future Since 1963<br> Driven By Dreams</p>
+                        <a href="#review-lamborghini" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown" id="exploreBtn">Discover More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="/static/img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Xin Chào</h5>
+                                <h1 class="display-1">Lamborghini</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">Truyền cảm hứng cho tương lai từ năm 1963<br> Được thúc đẩy bởi những giấc mơ</p>
+                        <a href="#review-lamborghini" id="exploreBtn" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">Khám phá thêm</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="/static/img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Ciao</h5>
+                                <h1 class="display-1">Lamborghini</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">Ispirando il futuro dal 1963<br> Spinto dai sogni</p>
+                        <a href="#review-lamborghini" id="exploreBtn" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">Esplora di più</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+     </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-secondary">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 pb-0 pb-lg-5 py-5">
+                    <div class="pb-0 pb-lg-5 py-5">
+                        <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="title-left">
+                                <h5>History</h5>
+                                <h1>About Our Agency</h1>
+                            </div>
+                        </div>
+                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">Lamborghini Web được sáng lập bởi Lâm Trí Thức, với niềm tin rằng một website phải mang tinh thần của một siêu xe: mạnh mẽ – khác biệt – không thỏa hiệp.</p>
+                        <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Performance-driven design
+                            </li>
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Bold identity, no compromise
+                            </li>
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Built by Lâm Trí Thức
+                            </li>
+                        </ul>
+                        <div class="row wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-6">
+                                <a href="" class="btn btn-outline-primary border-2 py-3 w-100">Explore Our Vision</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="" class="btn btn-primary py-3 w-100">Start Your Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="/static/img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Services</h5>
+                        <h1>How We Help You</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="/static/img/service-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">Transaction</h3>
+                            <p class="mb-4">We deliver seamless Lamborghini transactions with absolute transparency and precision. From model selection to final ownership, every step is handled with professionalism, discretion, and an uncompromising commitment to excellence. Owning a Lamborghini isn’t just a purchase — it’s a statement.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="/static/img/service-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">CORPORATE EVENTS</h3>
+                            <p class="mb-4">We curate exclusive Lamborghini events that ignite passion and elevate brand prestige. From private unveilings to elite automotive showcases, every event is crafted to deliver an unforgettable luxury experience. Where performance meets elegance.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="/static/img/service-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">Commercial Photo Shots</h3>
+                            <p class="mb-4">Our photography captures the soul of Lamborghini — power, motion, and design perfection. Each frame is meticulously composed to reflect the bold identity and iconic presence of the brand. Not just photos. Pure visual performance.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="/static/img/service-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase">Professional Modeling</h3>
+                            <p class="mb-4">We provide professional models who embody the Lamborghini lifestyle — confidence, elegance, and bold character. Perfectly aligned with luxury campaigns, exhibitions, and premium brand experiences. Presence that speaks without words.</p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="row g-0 justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="title-center">
+                            <h5>Transaction</h5>
+                            <h1>Want to own Lamborghini?</h1>
+                        </div>
+                    </div>
+                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s">A Lamborghini is not owned — it is experienced. Start your exclusive ownership journey with us.</p>
+                    <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
+                        <input class="form-control border-0 bg-dark rounded-pill w-100 py-4 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+    
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <section id="review-lamborghini" class="review-section">
+                    <div class="title-center">
+                        <h5>Review</h5>
+                        <h1>Lamborghini</h1>
+                    </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Launch Year</span>
+                                <span>Top Speed</span>
+                                <span>Curb Weight</span>
+                                <span>Engine</span>
+                                <span>0-100km/h</span>
+                                <span>Power Output</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-1.jpg" alt="">
+                            <div class="team-after">
+                                <span>2014</span>
+                                <span>325 km/h</span>
+                                <span>1,422 kg</span>
+                                <span>5.2L V10</span>
+                                <span>2.9s</span>
+                                <span>610 HP</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Huracán</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Engine</span>
+                                <span>Acceleration</span>
+                                <span>Top Speed</span>
+                                <span>Weight</span>
+                                <span>Drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-2.jpg" alt="">
+                            <div class="team-after">
+                                <span>770 HP</span>
+                                <span>6.5L V12</span>
+                                <span>2.8s</span>
+                                <span>350 km/h</span>
+                                <span>1,700 kg</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Aventador SV</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Height</span>
+                                <span>Weight</span>
+                                <span>0-100km/h</span>
+                                <span>Waist</span>
+                                <span>drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-3.jpg" alt="">
+                            <div class="team-after">
+                                <span>770 HP</span>
+                                <span>185 cm</span>
+                                <span>55 kg</span>
+                                <span>2.8s</span>
+                                <span>59 cm</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Rèvuelto</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Height</span>
+                                <span>Weight</span>
+                                <span>0-100km/h</span>
+                                <span>Waist</span>
+                                <span>drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-4.jpg" alt="">
+                            <div class="team-after">
+                                <span>770 HP</span>
+                                <span>185 cm</span>
+                                <span>1355 kg</span>
+                                <span>2.8s</span>
+                                <span>59 cm</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Úrus</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Height</span>
+                                <span>Weight</span>
+                                <span>0-100km/h</span>
+                                <span>Waist</span>
+                                <span>drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-5.jpg" alt="">
+                            <div class="team-after">
+                                <span>1770 HP</span>
+                                <span>221 cm</span>
+                                <span>1534 kg</span>
+                                <span>1.8s</span>
+                                <span>59 cm</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Véneno</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Height</span>
+                                <span>Weight</span>
+                                <span>0-100km/h</span>
+                                <span>Waist</span>
+                                <span>drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-6.jpg" alt="">
+                            <div class="team-after">
+                                <span>770 HP</span>
+                                <span>191 cm</span>
+                                <span>1100 kg</span>
+                                <span>3.8s</span>
+                                <span>75 cm</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Diablo SV</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Height</span>
+                                <span>Weight</span>
+                                <span>0-100km/h</span>
+                                <span>Waist</span>
+                                <span>drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-7.jpg" alt="">
+                            <div class="team-after">
+                                <span>870 HP</span>
+                                <span>194 cm</span>
+                                <span>1124 kg</span>
+                                <span>2.9s</span>
+                                <span>84 cm</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Countach</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <div class="team-before">
+                                <span>Power</span>
+                                <span>Height</span>
+                                <span>Weight</span>
+                                <span>0-100km/h</span>
+                                <span>Waist</span>
+                                <span>drive</span>
+                            </div>
+                            <img class="img-fluid" src="/static/img/team-8.jpg" alt="">
+                            <div class="team-after">
+                                <span>1770 HP</span>
+                                <span>141 cm</span>
+                                <span>1200 kg</span>
+                                <span>1.4s</span>
+                                <span>45 cm</span>
+                                <span>Rear-wheel drive</span>
+                            </div>
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase mb-0">Aventador S</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Testimonial</h5>
+                        <h1>Our Clients Say</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='/static/img/testimonial-1.jpg' alt=''>">
+                    <p class="fs-5">This platform delivers the same feeling as driving a Lamborghini — bold, precise, and uncompromising. Every detail reflects performance and luxury at the highest level.</p>
+                    <h5 class="text-uppercase">Joanne Irwin</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='/static/img/testimonial-2.jpg' alt=''>">
+                    <p class="fs-5">The design language is aggressive yet elegant. It doesn’t just showcase cars — it tells the story of speed, power, and individuality</p>
+                    <h5 class="text-uppercase">Lana Anderson</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='/static/img/testimonial-3.jpg' alt=''>">
+                    <p class="fs-5">A digital experience built with the soul of a V12 engine. Fast, refined, and unforgettable.</p>
+                    <h5 class="text-uppercase">Pamela Torney</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+<div class="container-fluid footer-video-wrapper">
+    
+    <!-- Video background -->
+    <video class="footer-video" autoplay muted loop playsinline>
+        <source src="static/img/lamborghini.mp4" type="video/mp4">
+    </video>
+
+    <!-- Lớp phủ tối (cho chữ dễ đọc) -->
+    <div class="footer-overlay"></div>
+
+    <!-- Nội dung footer -->
+    <div class="container text-center py-5 footer-content">
+        <h1 class="display-4 text-white text-uppercase">LAMBORGHINI</h1>
+
+        <div class="d-flex justify-content-center mb-4">
+            <a class="btn btn-lg-square btn-outline-warning border-2 m-1"><i class="fab fa-x-twitter"></i></a>
+            <a class="btn btn-lg-square btn-outline-warning border-2 m-1"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-lg-square btn-outline-warning border-2 m-1"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-lg-square btn-outline-warning border-2 m-1"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <p>© jtrithuc9@gmail.com, All Right Reserved.</p>
+        <p>Designed By <a href="https://www.facebook.com/lamthuc.vn/?locale=vi_VN"><span class="text-warning">Lâm Trí Thức</span></a></p>
+    </div>
+</div>
+
+    <!-- Footer End -->
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
